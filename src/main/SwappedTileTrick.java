@@ -1,10 +1,13 @@
 package main;
 
+import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.BoxLayout;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class SwappedTileTrick {
 
@@ -40,10 +43,12 @@ public class SwappedTileTrick {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JPanel windowContent = new JPanel(new BorderLayout());
+		frame.add(windowContent);
 		
 		TilesPanel gamePanel = new TilesPanel(6);
+		windowContent.add(gamePanel);
 		
-		frame.add(gamePanel);
 	}
 	
 	

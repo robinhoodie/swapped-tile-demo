@@ -52,6 +52,7 @@ public class TileButton extends JButton {
 	
 	public void swapTile(){
 		this.getTile().swapTile();
+		this.pressed = true;
 		if(this.getTile().getColour().equals(Tile.WHITE_TEXT)){
 			this.setBackground(WHITE);			
 		} else {
