@@ -12,6 +12,10 @@ import javax.swing.JPanel;
 public class TilesPanel extends JPanel {
 
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8941078916556324317L;
+	/**
 	 * Create the panel.
 	 */
 	
@@ -166,7 +170,7 @@ public class TilesPanel extends JPanel {
 			}
 		};
 		
-		tileGrid = new Grid(dimension);
+		tileGrid = new Grid(this.dimension);
 		tileGrid.randomizeTiles();
 		
 		buttons = new TileButton[tileGrid.getDimension()][tileGrid.getDimension()];

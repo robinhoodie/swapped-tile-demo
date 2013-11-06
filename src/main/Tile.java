@@ -11,7 +11,7 @@ public class Tile {
 	
 	public Tile(){
 		colour = WHITE;
-		swapped = false;
+		setSwapped(false);
 	}
 	
 	public void setColourToWhite(){
@@ -38,7 +38,15 @@ public class Tile {
 			colour = WHITE;
 		}
 		
-		swapped = true;
+		setSwapped(true);
+	}
+
+	public Boolean getSwapped() {
+		return swapped;
+	}
+
+	public void setSwapped(Boolean swapped) {
+		this.swapped = swapped;
 	}
 	
 }

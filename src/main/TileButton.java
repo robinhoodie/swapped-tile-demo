@@ -2,12 +2,14 @@ package main;
 
 import java.awt.Color;
 import java.awt.Rectangle;
-
-import javax.swing.Action;
 import javax.swing.JButton;
 
 public class TileButton extends JButton {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5076503519833078978L;
 	private Tile tile;
 	private Boolean pressed;
 	public static final Color WHITE = new Color(255,255,255,255);
