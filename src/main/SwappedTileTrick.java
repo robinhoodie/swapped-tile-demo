@@ -37,7 +37,7 @@ public class SwappedTileTrick {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(0, 0, 600, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		JPanel windowContent = new JPanel(new BorderLayout());
 		frame.add(windowContent);
@@ -46,7 +46,5 @@ public class SwappedTileTrick {
 		windowContent.add(gamePanel);
 		
 	}
-	
-	
 
 }

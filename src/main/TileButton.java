@@ -20,7 +20,8 @@ public class TileButton extends JButton {
 	public TileButton(Tile newTile) {
 		this.setTile(newTile);
 		this.setPressed(false);
-//		this.setSize(100, 100);
+		this.setOpaque(true);
+		this.setBorderPainted(false);
 		Rectangle rect = new Rectangle();
 		rect.height = 100;
 		rect.width = 100;
